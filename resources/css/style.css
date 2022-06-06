@@ -1,40 +1,34 @@
-/* FONT-FAMILY SETUP */
-/* ===================== */
-/* @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@100&display=swap'); */
-/* ===================== */
-/* BASIC SETUP */
-/* ===================== */
+.top-nav {
+    /* height: 4rem; */
 
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+}
+.top-nav a {
+    margin-top: 0.25rem;
 }
 
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+@media only screen and (min-width: 992px) {
+    .top-nav {
+        height: 8.375rem;
+    }
+    .top-nav a {
+        margin-top: 0;
+      }
+    .logo>img, .nav-text {
+        margin-top: 3.19rem;
+    }
+    .nav-text {
+        padding-top: .8rem;
+    }
+    .navbar {
+        --bs-navbar-padding-y: 0;
+    }
+    .navbar-nav {
+        --bs-nav-link-padding-y: 0;
+    }
+    .navigation-area p {
+        padding-top: 0.5rem;
+    }
+    .navigation-area > p > span {
+        margin-left: 11px;
+    }
 }
-
-body {
-    font-family: 'Titillium Web', sans-serif;
-    text-rendering: optimizeLegibility;
-    line-height: 1.3;
-    font-size: 1.6rem;
-}
-
-ul li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color:black;
-} */
-
-
-
-/* ===================== */
-/* REUSABLE COMPONENTS */
-/* ===================== */
-
