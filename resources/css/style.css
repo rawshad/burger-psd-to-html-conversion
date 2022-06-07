@@ -1,14 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #3d2514;
+}
+.header-area {
+    background: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
 .top-nav {
-    /* height: 4rem; */
-
+    padding: 0.50rem;
 }
 .top-nav a {
     margin-top: 0.25rem;
 }
-
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #3d2514;
+    font-family: 'Bebas Neue';
+    font-size: 1.30rem;
+    letter-spacing: 0.37rem;
+    padding-right: 1.5rem;
+}
+.navbar-toggler {
+    padding: 0;
+    border: 0;
+}
+.express-delivery {
+    font-size: 1.04rem;
+    font-weight: 600;
+}
+/* hro-banner area */
+.hero-banner {
+    margin-top: 80px;
+    font-family: 'Bebas Neue', cursive;
+}
+.slogan {
+    margin-top: 1.5rem;
+    font-size: 23.65px;
+    border: 3px dashed #3d2514;
+    max-width: 400px;
+}
+.campaign {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+.campaign-sub {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+.price-combo {
+    font-size: 2.5rem;
+    line-height: 2.5rem;   
+}
+.cents {
+    font-size: 1.5rem;
+}
+.price-text {
+    font-size: 2rem;
+}
 @media only screen and (min-width: 992px) {
+    .header-area {
+        background: url(../img/hero-bg.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+    }
     .top-nav {
         height: 8.375rem;
+        padding: 0;
     }
     .top-nav a {
         margin-top: 0;
@@ -27,8 +90,51 @@
     }
     .navigation-area p {
         padding-top: 0.5rem;
+        padding-right: 0;
     }
     .navigation-area > p > span {
         margin-left: 11px;
+    }
+    .navbar-nav .nav-item:nth-last-child(-n+1) > .nav-link {
+        padding-right: 0;
+        margin-right: -0.26rem;
+    }
+    /* hero-banner area */
+    .slogan {
+        height: 50px;
+        line-height: 50px;
+        margin-top: 80px;
+    }
+    .campaign {
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 5.63rem;
+        line-height: 5.63rem;
+    }
+    .campaign-sub {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .combo-offer {
+        position: relative;
+    }
+    .price-tag {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        background:#bf2222;
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .price-combo {
+        border-radius: 50%;
+        width: 12rem;
+        height: 12rem;
+        line-height: 12rem;
+        background: white;
+        margin-left: .25rem;
+        margin-top: .25rem;
+    }
+    .price-text {
     }
 }

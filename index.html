@@ -2,56 +2,79 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Burger</title>
-  <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- BOOTSTRAP -->
-  <link rel="stylesheet" href="vendors/css/bootstrap.css">
-  <!-- CUSTOM STYLE -->
-  <link rel="stylesheet" href="resources/css/style.css">
-  <link rel="stylesheet" href="resources/css/responsive.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="resources/fonts/font.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="vendors/css/bootstrap.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
 </head>
 
 <body>
     <header id="hero-section" class="header-area">
+        <!-- NAVIGATION AREA -->
         <div class="container navbar-container">
-          <div class="row top-nav bg-warning align-items-center align-items-lg-start">
-            <div class="col-5 col-md-3">
-              <a href="#" class="logo"><img src="resources/img/logo-color.png" alt="Burger House" class="img-fluid"></a>
-            </div>
-            <div class="col-7 col-md-9 navigation-area">
-                <p class="text-end d-none d-lg-block nav-text"><img src="resources/img/icon-1.png" alt=""><span class="">Express Delivery +1 234 567 890</span></p>
-                <nav class="navbar navbar-expand-lg">
-                  <div class="container-fluid">
-                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                          <a class="nav-link active text-uppercase" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-uppercase" href="#">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-uppercase" href="#">Our Story</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-uppercase" href="#">Contact Us</a>
-                        </li>
-                      </ul>
+            <div class="row top-nav align-items-center align-items-lg-start">
+                <div class="col-5 col-md-3">
+                    <a href="#" class="logo"><img src="resources/img/logo-color.png" alt="Burger House"
+                            class="img-fluid"></a>
+                </div>
+                <div class="col-7 col-md-9 navigation-area">
+                    <div class="container-fluid">
+                        <div class="row justify-content-end">
+                            <p class="text-end d-none d-lg-block nav-text"><img src="resources/img/icon-1.png" alt=""><span class="express-delivery ms-3">Express Delivery +1 234 567 890</span></p>
+                        </div>
+                        <div class="row justify-content-end">
+                            <nav class="navbar navbar-expand-lg text-end p-0">
+                                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav ms-auto">
+                                      <li class="nav-item">
+                                        <a class="nav-link active text-uppercase" aria-current="page" href="#">Home</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link text-uppercase" href="#">Menu</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link text-uppercase" href="#">Our Story</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link text-uppercase last-child" href="#">Contact Us</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                            </nav>
+                        </div>
                     </div>
-                  </div>
-                </nav>
+                </div>
             </div>
-          </div>
+        </div>
+        <!-- NAVIGATION AREA ENDS HERE -->
+        <!-- HERO BANNER AREA -->
+        <div class="container hero-banner-area">
+            <div class="row hero-banner">
+                <div class="col-lg-6">
+                    <p class="slogan text-uppercase text-center">it is a good time for the great test of burgers</p>
+                    <p class="campaign text-uppercase">Burger<span class="campaign-sub d-block">Week</span></p>
+                </div>
+                <div class="col-lg-6 combo-offer">
+                    <img src="resources/img/hero-image.png" alt="burger-combo" class="img-fluid">
+                    <div class="price-tag"><p class="price-combo text-center">$5<span class="cents">.49</span><span class="price-text">only</span></p></div>
+                </div>
+            </div>
         </div>
     </header>
     <!-- PLUGINS -->
