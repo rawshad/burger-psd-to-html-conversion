@@ -1,8 +1,17 @@
+/***************
+GOOGLE FONTS
+***************/
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/***************
+BASIC SETUP 
+***************/
 body {
     font-family: 'Montserrat', sans-serif;
     color: #3d2514;
 }
+/***************
+HERO-SECTION START 
+***************/
 .header-area {
     background: url(../img/hero-bg.jpg);
     background-size: cover;
@@ -10,6 +19,7 @@ body {
     background-position: center top;
     background-attachment: fixed;
 }
+/* NAVIGATION AREA */
 .top-nav {
     padding: 0.50rem;
 }
@@ -31,13 +41,14 @@ body {
     font-size: 1.04rem;
     font-weight: 600;
 }
-/* hro-banner area */
+/* HERO-BANNER AREA */
 .hero-banner {
-    margin-top: 80px;
+    margin-top: 20px;
     font-family: 'Bebas Neue', cursive;
+    padding-bottom: 5%;
 }
 .slogan {
-    margin-top: 1.5rem;
+    margin: 1.5rem auto 0 auto;
     font-size: 23.65px;
     border: 3px dashed #3d2514;
     max-width: 400px;
@@ -46,28 +57,24 @@ body {
     font-family: 'Alfa Slab One', cursive;
     font-size: 4rem;
     line-height: 4rem;
+    text-shadow: 2px 2px #ffffff;
+    text-align: center;
+    margin-top: 1.5rem;
 }
 .campaign-sub {
     font-size: 2.5rem;
     line-height: 2.5rem;
 }
-.price-combo {
-    font-size: 2.5rem;
-    line-height: 2.5rem;   
-}
-.cents {
-    font-size: 1.5rem;
-}
-.price-text {
-    font-size: 2rem;
-}
+
+
+/***************
+RESPONSIVE LAYOUT 
+***************/
 @media only screen and (min-width: 992px) {
-    .header-area {
-        background: url(../img/hero-bg.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-attachment: fixed;
+    .hero-banner {
+        margin-top: 80px;
+        font-family: 'Bebas Neue', cursive;
+        padding-bottom: 78px;
     }
     .top-nav {
         height: 8.375rem;
@@ -103,38 +110,16 @@ body {
     .slogan {
         height: 50px;
         line-height: 50px;
-        margin-top: 80px;
+        margin: 80px 0 0 0;
     }
     .campaign {
         font-family: 'Alfa Slab One', cursive;
         font-size: 5.63rem;
         line-height: 5.63rem;
+        text-align: start;
     }
     .campaign-sub {
         font-size: 2.5rem;
         line-height: 2.5rem;
-    }
-    .combo-offer {
-        position: relative;
-    }
-    .price-tag {
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 50%;
-        background:#bf2222;
-        width: 12.5rem;
-        height: 12.5rem;
-    }
-    .price-combo {
-        border-radius: 50%;
-        width: 12rem;
-        height: 12rem;
-        line-height: 12rem;
-        background: white;
-        margin-left: .25rem;
-        margin-top: .25rem;
-    }
-    .price-text {
     }
 }
