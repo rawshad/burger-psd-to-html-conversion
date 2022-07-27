@@ -153,6 +153,7 @@ RESPONSIVE LAYOUT
     }
     .offer-text {
         top: 5%;
+        margin-left: 5%;
     }
     .offer-text p {
         font-size: 1.5rem;
@@ -161,5 +162,15 @@ RESPONSIVE LAYOUT
     .offer-text h2 {
         font-size: 2.6rem;
         font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .upcoming-items-row {
+        padding: 0 !important;
+        margin-top: 5%;
+    }
+    .offer-text {
+        margin-left: 10%;
     }
 }
