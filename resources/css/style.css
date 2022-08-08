@@ -9,11 +9,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #3d2514;
 }
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-    line-height: 0;
-}
 
 
 /***************
@@ -87,6 +82,43 @@ UPCOMING-ITEMS START
     color: #ffffff;
     top: 2%;
     margin-left: 5%;
+}
+.upcoming-items button {
+    --bs-btn-font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    --bs-btn-border-radius: 0;
+    --bs-btn-focus-shadow-rgb: 0;
+    --bs-btn-padding-x: 1.3rem;
+    --bs-btn-padding-y: 0.2rem;
+}
+/***************
+CHOOSE START 
+***************/
+
+
+.choose h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3.13rem;
+    color: #3d2514;
+    padding-top: 4rem; 
+}
+.chooseBurger {
+    padding-top: 4.44rem;
+}
+.chooseBurger h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.34rem;
+    margin-top: 2rem;
+}
+.chooseBurger button {
+    font-family: 'Alfa Slab One', cursive;
+    --bs-btn-border-radius: 0;
+    --bs-btn-focus-shadow-rgb: 0;
+    --bs-btn-padding-x: 2.3rem;
+    --bs-btn-padding-y: .5rem;
+    --bs-btn-bg: #bf2222;
+    --bs-btn-border-color: #bf2222;
+    margin: 2.4rem 0 10rem 0;
 }
 
 
