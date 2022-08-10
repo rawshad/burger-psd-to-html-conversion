@@ -131,8 +131,31 @@ CHOOSE START
     box-shadow: 20px 20px 30px 2px rgba(0, 0, 0, 0.2);
     padding: 1.25rem;
 }
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+.upcoming-events h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8rem;
+    line-height: 0.8rem;
+    margin-top: 2.4rem;
+    color: #3d3d3d;
+}
+.upcoming-events h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.6rem;
+    color: #3d2514;
+}
+.owl-theme .owl-nav {
     display: none;
+}
+.owl-theme .owl-dots {
+    margin-top: 5%;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 17px;
+    height: 17px;
+    background: #dcdcdc;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: #ffc045;
 }
 
 
@@ -208,6 +231,16 @@ RESPONSIVE LAYOUT
     .offer-text h2 {
         font-size: 2.6rem;
         font-weight: 700;
+    }
+    /* UPCOMING EVENTS AREA */
+    .upcoming-events p {
+        color: #3d3d3d;
+        text-align: justify;
+        padding-bottom: 5.94rem;
+    }
+    .owl-theme .owl-dots {
+        position: absolute;
+        bottom: 10%;
     }
 }
 
