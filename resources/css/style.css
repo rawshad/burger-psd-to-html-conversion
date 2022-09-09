@@ -110,7 +110,7 @@ CHOOSE START
     font-size: 2.34rem;
     margin-top: 2rem;
 }
-.chooseBurger button {
+.chooseBurger button, .reservation .row button {
     font-family: 'Alfa Slab One', cursive;
     --bs-btn-border-radius: 0;
     --bs-btn-focus-shadow-rgb: 0;
@@ -120,7 +120,7 @@ CHOOSE START
     --bs-btn-border-color: #bf2222;
     margin: 2.4rem 0 10rem 0;
 }
-.chooseBurger button:hover {
+.chooseBurger button:hover, .reservation .row button:hover {
     --bs-btn-hover-color:#bb2d3b;
     --bs-btn-hover-bg: #fff;
     --bs-btn-hover-border-color: #b02a37;
@@ -157,6 +157,29 @@ CHOOSE START
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
 	background: #ffc045;
 }
+
+/* RESERVATION AREA STARTS */
+.reservation {
+    /* height: 100vh;
+    width: 100vw;
+    background:rgba(0, 0, 0, 0.2);
+    display: grid;
+    place-items: center; */
+    background-image: url(../img/background-1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Alfa Slab One', cursive;;
+}
+.reservation .row button {
+    width: 100%;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.reservation input {
+    font-family:'Bebas Neue', cursive;
+}
+
 
 
 
@@ -241,6 +264,11 @@ RESPONSIVE LAYOUT
     .owl-theme .owl-dots {
         position: absolute;
         bottom: 10%;
+    }
+    /* RESERVATION AREA */
+    .reservation .row {
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
