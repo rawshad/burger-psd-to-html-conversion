@@ -307,6 +307,7 @@ RESPONSIVE LAYOUT
         background-image: url(../img/background-1.png);
         background-repeat: no-repeat;
         background-size: 100%;
+        padding: 5% 0 20% 0;
     }
     .reservation .row {
         width: 70%;
