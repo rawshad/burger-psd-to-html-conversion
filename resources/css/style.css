@@ -160,15 +160,7 @@ CHOOSE START
 
 /* RESERVATION AREA STARTS */
 .reservation {
-    /* height: 100vh;
-    width: 100vw;
-    background:rgba(0, 0, 0, 0.2);
-    display: grid;
-    place-items: center; */
-    background-image: url(../img/background-1.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-family: 'Alfa Slab One', cursive;;
+    font-family: 'Alfa Slab One', cursive;
 }
 .reservation .row button {
     width: 100%;
@@ -179,6 +171,51 @@ CHOOSE START
 .reservation input {
     font-family:'Bebas Neue', cursive;
 }
+
+/* FOOTER AREA STARTS */
+footer {
+    background: url(../img/background-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+footer .mailing {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+footer span {
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+footer h4 {
+    display: inline-block;
+    font-size: 20px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .social-icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+footer .copyright {
+    text-align: center;
+}
+
+
 
 
 
@@ -266,9 +303,25 @@ RESPONSIVE LAYOUT
         bottom: 10%;
     }
     /* RESERVATION AREA */
+    .reservation {
+        background-image: url(../img/background-1.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
     .reservation .row {
         width: 70%;
         margin: 0 auto;
+    }
+    /* FOOTER AREA */
+    footer .social-icons {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    footer .copyright {
+        text-align: left;
     }
 }
 
@@ -279,5 +332,15 @@ RESPONSIVE LAYOUT
     }
     .offer-text {
         margin-left: 10%;
+    }
+    footer .row {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 576px) {
+    footer .row {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
