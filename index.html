@@ -27,6 +27,11 @@
         <!-- NAVIGATION AREA START -->
         <div class="container navbar-container">
             <div class="row top-nav align-items-center align-items-lg-start">
+                <div class="col-7 d-block d-lg-none">
+                    <a class="nav-toggle" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                      </a>                      
+                </div>
                 <div class="col-5 col-md-3">
                     <a href="#" class="logo"><img src="resources/img/logo-color.png" alt="Burger House"
                             class="img-fluid"></a>
@@ -40,11 +45,11 @@
                         </div>
                         <div class="row justify-content-end">
                             <nav class="navbar navbar-expand-lg text-end p-0">
-                                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                                <!-- <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                                     aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
-                                </button>
+                                </button> -->
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item">
@@ -68,6 +73,40 @@
                 </div>
             </div>
         </div>
+        <!-- off-canvus navigation for responsive layout -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    <img src="resources/img/logo-color.png" alt="Burger House" class="img-fluid">
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body pt-5 mt-5">
+                <div class="" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mt-2">
+                            <a class="nav-link active text-uppercase" aria-current="page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link text-uppercase" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link text-uppercase" href="#">Our Story</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link text-uppercase last-child" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 social-icons pb-3 d-flex justify-content-around mt-5 pt-5">
+                    <a href="#" class="text-black social-icon pt-5"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-black social-icon pt-5"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-black social-icon pt-5"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-black social-icon pt-5"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+          </div>
         <!-- NAVIGATION AREA END -->
         <!-- HERO BANNER AREA START -->
         <div class="container hero-banner-area">
@@ -84,7 +123,7 @@
         <!-- HERO BANNER AREA END -->
     </header>
     <!-- BURGER - UPCOMING ITEMS AREA START -->
-    <section class="container upcoming-items">
+    <section class="container upcoming-items" id="upcoming">
         <div class="row upcoming-items-row text-center pt-5">
             <div class="col-lg-6 most-popular position-relative">
                 <div class="offer-text position-absolute text-uppercase text-start">
@@ -221,11 +260,17 @@
         </div>
         <div class="row ps-5 pe-3 d-flex align-items-center mailing-container">
             <div class="col-lg-6 pt-5 text-white">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ducimus aspernatur quod, a quibusdam repudiandae repellendus quasi doloribus, magni consequatur maiores esse ab odit exercitationem, laboriosam rerum ipsam enim in.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ducimus aspernatur quod, a quibusdam
+                    repudiandae repellendus quasi doloribus, magni consequatur maiores esse ab odit exercitationem,
+                    laboriosam rerum ipsam enim in.</p>
             </div>
             <div class="col-lg-6 pt-5 text-white mailing">
-                <div><span><i class="fa-solid fa-location-dot"></i></span><h4>main road, building name, country</h4></div>
-                <div><span><i class="fa-solid fa-envelope"></i></span><h4>info@companyname.com</h4></div>
+                <div><span><i class="fa-solid fa-location-dot"></i></span>
+                    <h4>main road, building name, country</h4>
+                </div>
+                <div><span><i class="fa-solid fa-envelope"></i></span>
+                    <h4>info@companyname.com</h4>
+                </div>
             </div>
         </div>
         <div class="row text-white ps-5 pe-3 mt-5 pt-5">

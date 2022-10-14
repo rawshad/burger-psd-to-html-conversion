@@ -43,6 +43,7 @@ HERO-SECTION START
     font-size: 1.04rem;
     font-weight: 600;
 }
+
 /* HERO-BANNER AREA */
 .hero-banner {
     margin-top: 20px;
@@ -52,7 +53,7 @@ HERO-SECTION START
 .slogan {
     margin: 1.5rem auto 0 auto;
     font-size: 23.65px;
-    border: 3px dashed #3d2514;
+    border: 3px dashed #4d3728;
     max-width: 400px;
 }
 .campaign {
@@ -213,135 +214,4 @@ footer .social-icon {
 
 footer .copyright {
     text-align: center;
-}
-
-
-
-
-
-
-
-/***************
-RESPONSIVE LAYOUT 
-***************/
-@media only screen and (min-width: 992px) {
-    .hero-banner {
-        margin-top: 80px;
-        font-family: 'Bebas Neue', cursive;
-        padding-bottom: 78px;
-    }
-    .top-nav {
-        height: 8.375rem;
-        padding: 0;
-    }
-    .top-nav a {
-        margin-top: 0;
-      }
-    .logo>img, .nav-text {
-        margin-top: 3.19rem;
-    }
-    .nav-text {
-        padding-top: .8rem;
-    }
-    .navbar {
-        --bs-navbar-padding-y: 0;
-    }
-    .navbar-nav {
-        --bs-nav-link-padding-y: 0;
-    }
-    .navigation-area p {
-        padding-top: 0.5rem;
-        padding-right: 0;
-    }
-    .navigation-area > p > span {
-        margin-left: 11px;
-    }
-    .navbar-nav .nav-item:nth-last-child(-n+1) > .nav-link {
-        padding-right: 0;
-        margin-right: -0.26rem;
-    }
-    /* hero-banner area */
-    .slogan {
-        height: 50px;
-        line-height: 50px;
-        margin: 80px 0 0 0;
-    }
-    .campaign {
-        font-family: 'Alfa Slab One', cursive;
-        font-size: 5.63rem;
-        line-height: 5.63rem;
-        text-align: start;
-    }
-    .campaign-sub {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-    }
-    /* upcoming-items area */
-    .upcoming-items-2, .fresh-chilly {
-        margin-top: 0;
-    }
-    .offer-text {
-        top: 5%;
-        margin-left: 5%;
-    }
-    .offer-text p {
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
-    .offer-text h2 {
-        font-size: 2.6rem;
-        font-weight: 700;
-    }
-    /* UPCOMING EVENTS AREA */
-    .upcoming-events p {
-        color: #3d3d3d;
-        text-align: justify;
-        padding-bottom: 5.94rem;
-    }
-    .owl-theme .owl-dots {
-        position: absolute;
-        bottom: 10%;
-    }
-    /* RESERVATION AREA */
-    .reservation {
-        background-image: url(../img/background-1.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        padding: 5% 0 20% 0;
-    }
-    .reservation .row {
-        width: 70%;
-        margin: 0 auto;
-    }
-    /* FOOTER AREA */
-    footer .social-icons {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        gap: 20px;
-    }
-    
-    footer .copyright {
-        text-align: left;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .upcoming-items-row {
-        padding: 0 !important;
-        margin-top: 5%;
-    }
-    .offer-text {
-        margin-left: 10%;
-    }
-    footer .row {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-@media only screen and (max-width: 576px) {
-    footer .row {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
 }
